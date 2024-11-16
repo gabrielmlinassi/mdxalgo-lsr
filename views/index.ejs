@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <ul>
+        <% for(var i=0; i<longShortRates.length; i++) {%>
+        <li>
+          time:
+          <%= longShortRates[i].time %>
+        </li>
+        <li>
+          Long rate:
+          <%= longShortRates[i].longrate %>
+        </li>
+        <li>
+          short rate:
+          <%= longShortRates[i].shortrate %>
+          <br />
+          <br />
+        </li>
+        <% } %>
+      </ul>
+    </div>
+  </body>
+</html>
